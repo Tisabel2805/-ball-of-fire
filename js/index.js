@@ -12,10 +12,13 @@ const game = new Phaser.Game(config);
 
 function preload() {
   this.load.image('sky', 'assets/sky.jpg');
+  this.load.image('space','assets/space.jpng');
+
 }
 
 function create() {
   const sky = this.add.image(400, 300, 'sky');
   sky.displayHeight = game.config.height;
   sky.displayWidth = game.config.width;
+
 }

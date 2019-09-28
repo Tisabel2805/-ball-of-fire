@@ -1,0 +1,3 @@
+preload() {
+  this.load.image('')
+}
