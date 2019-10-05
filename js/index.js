@@ -1,6 +1,14 @@
 const config = {
+  backgroundColor: '#435DE4',
+  dom: {
+    createContainer: true
+  },
   height: 600,
-  scene: [MainMenu],
+  parent: 'container',
+  physics: {
+    default: 'arcade'
+  },
+  scene: [MainMenu, Levels],
   type: Phaser.AUTO,
   width: 800
 };
