@@ -6,12 +6,13 @@ class MainMenu extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image('mainmenu-background', 'assets/mainmenu/background.png');
+    console.log(4 * 8);
+    this.load.image('mainmenu-background', 'assets/mainmenu/background.jpg');
     this.load.css('80s', 'assets/mainmenu/css/index.css');
   }
 
   create() {
-    const background = this.add.image(400, 300, 'mainmenu-background');
+    const background = this.add.image('mainmenu-background');
     background.displayWidth = this.game.config.width;
     background.displayHeight = this.game.config.height;
 
