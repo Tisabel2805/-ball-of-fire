@@ -8,11 +8,11 @@ class MainMenu extends Phaser.Scene {
   preload() {
     this.load.image('mainmenu-background', 'assets/mainmenu/background.jpg');
     this.load.css('80s', 'assets/mainmenu/css/index.css');
-    
+
   }
 
   create() {
-    const background = this.add.image(400, 300, 'mainmenu-background');
+    const background = this.add.image(400, 300, 'mainmenu-background.jpg');
     background.displayWidth = window.GAME.game.config.width;
     background.displayHeight = window.GAME.game.config.height;
 
@@ -23,6 +23,5 @@ class MainMenu extends Phaser.Scene {
     playButton.onclick = () => window.GAME.scene.start('game');
     this.add.dom(400, 500, playButton).setInteractive();
 
-    const background = this.add.image(400, 300, 'space2');
   }
 }

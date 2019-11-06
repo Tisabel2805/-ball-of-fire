@@ -3,14 +3,16 @@ const config = {
   dom: {
     createContainer: true
   },
+
   height: 600,
   parent: 'container',
   physics: {
     default: 'arcade'
   },
-  scene: [MainMenu, Game];
+
+  scene: [MainMenu, Game],
   type: Phaser.AUTO,
-  width: 800
+  width: 800,
 };
 
 new Phaser.Game(config);
